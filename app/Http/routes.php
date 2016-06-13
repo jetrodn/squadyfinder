@@ -19,7 +19,6 @@ Route::group([
     ],
 ], function () {
 
-
     /**
      * Localized routes
      *
@@ -100,20 +99,13 @@ Route::post('dash/team-settings/update-a-team',
         'uses' => 'Dash\DashController@updateTeam'
     ]);
 
-
 Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
-
 Route::post('dash/questionnaire-change-action', 'Dash\DashController@questionnaireUpdateAction');
-
 Route::get('reset-specs', 'Dash\DashController@resetSpecs');
-
-
-
 Route::get('teams/create-process-team/{teamname}', 'TeamController@createNewTeam');
 
-//Route::get('teams/all-teams/{url}', 'TeamsController@getEachView');
 
 
 /*==========================================

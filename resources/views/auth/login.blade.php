@@ -59,31 +59,39 @@
                                    placeholder="Ваш пароль" required>
                         </div>
 
+                        <div class="form-group">
+                            {!! app('captcha')->display(); !!}
+                        </div>
+
                         <div class="checkbox">
                             <label>
                                 <input type="checkbox" name="remember"> Запомнить меня
                             </label>
                         </div>
-
                         <button type="submit" class="btn btn-success">Войти</button>
 
                         <p class="login-href right">У Вас нет аккаунта?
                             <a class="login-href" href="<?php echo url('/'); ?>/auth/register">Регистрация</a>
                         </p>
                     </form>
-                    <!--
+
+                <!--
                     <div class="login-with-social">
-                            <h4>или</h4>
 
-                            <div class="row">
-                                <div class="col-md-4 social-option">
+                        <h4>или войдите с помощью</h4>
 
-                                </div>
-                                <div class="col-md-4 social-option">
-                                </div>
-                            </div>
-                    </div>
-                    -->
+                        <div class="row">
+                            <div class="col-md-4 social-option"><a
+                                        href="<?php echo url('/'); ?>/auth/register/with-github"><i
+                                            class="fa fa-github"></i></a></div>
+                            <div class="col-md-4 social-option"><a
+                                        href="<?php echo url('/'); ?>/auth/register/with-twitter"><i
+                                            class="fa fa-twitter"></i></a></div>
+                            <div class="col-md-4 social-option">
+                                <a href=""><i class="fa fa-vk"></i></a></div>
+                        </div>
+
+                    </div> -->
                 </div>
             </div>
         </div>

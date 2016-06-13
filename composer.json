@@ -10,7 +10,8 @@
         "arcanedev/localization": "^0.7.5",
         "intervention/image": "^2.3",
         "laravel/socialite": "^2.0",
-        "laravelcollective/html": "5.2.*"
+        "laravelcollective/html": "5.2.*",
+        "anhskohbo/no-captcha": "2.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

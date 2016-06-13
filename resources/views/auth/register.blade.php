@@ -67,15 +67,20 @@
 
                         </div>
 
+                        <div class="form-group">
+                            {!! app('captcha')->display(); !!}
+                        </div>
+
                         <button type="submit" class="btn btn-success">Регистрация</button>
 
-                        <p class="login-href right">Уже есть аккаунта? <a class="login-href" href="<?php echo url('/'); ?>/auth/login">Войти</a></p>
+                        <p class="login-href right">Уже есть аккаунт <a class="login-href" href="<?php echo url('/'); ?>/auth/login">Войти</a></p>
                     </form>
+
+
                     <!--
                     <div class="login-with-social">
 
                         <h4>или пройдите регистрацию с помощью</h4>
-
                         <div class="row">
                             <div class="col-md-4 social-option"><a href="<?php echo url('/'); ?>/auth/register/with-github"><i class="fa fa-github"></i></a></div>
                             <div class="col-md-4 social-option"><a href="<?php echo url('/'); ?>/auth/register/with-twitter"><i class="fa fa-twitter"></i></a></div>

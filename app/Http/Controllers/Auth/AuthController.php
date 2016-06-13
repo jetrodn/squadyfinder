@@ -52,6 +52,7 @@ class AuthController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|min:6|confirmed',
+            'g-recaptcha-response' => 'required|captcha'
         ]);
     }
 
@@ -90,7 +91,25 @@ class AuthController extends Controller
      */
     public function getGithubCallback() {
         $user = \Socialite::with('github')->user();
+
+//
+//        $token = $user->token;
+//        $refreshToken = $user->refreshToken;
+//        $expiresIn = $user->expiresIn;
+//
+//        dump($user->getId());
+//        dump($user->getNickname());
+//        dump($user->getName());
+//        dump($user->getEmail());
+//        dump($user->getAvatar());
+//
+//        dump($token);
+//        dump($refreshToken);
+//        dump($expiresIn);
+
         dd($user);
+
+
     }
 
     /**

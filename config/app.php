@@ -163,6 +163,7 @@ return [
         Arcanedev\Localization\LocalizationServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        Anhskohbo\NoCaptcha\NoCaptchaServiceProvider::class,
 
 
     ],
