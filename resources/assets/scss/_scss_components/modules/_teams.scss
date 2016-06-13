@@ -1,0 +1,840 @@
+/*==========================================
+Styles for teams
+============================================*/
+@import "../global/_mixins";
+
+section.create-new-team {
+  .container-title {
+    margin-bottom: 50px;
+  }
+
+  .search-form form .form-group input[type="checkbox"] {
+    margin-left: 10px !important;
+    margin-top: 1px;
+    cursor: pointer;
+  }
+
+  .search-form form .form-group label {
+    margin-left: 1px;
+    margin-top: -15px;
+    cursor: pointer;
+  }
+
+  .search-form form .form-group select:nth-child(2) {
+    margin-left: 17px;
+  }
+
+  .search-form form .form-group select:last-child {
+    margin-left: 17px;
+  }
+
+  .search-form {
+    form {
+      .create-team-image {
+        text-align: center;
+        img {
+          max-width: 450px;
+          margin-bottom: 20px;
+          margin-top: -50px;
+        }
+      }
+      h4 {
+        font-family: Play;
+        font-size: 24px;
+        color: #7C7F7B;
+        margin-bottom: 40px;
+        span {
+          font-size: 34px;
+        }
+      }
+      .form-group {
+        .last-position {
+          margin-bottom: 20px;
+        }
+        .char-restriction {
+          margin-bottom: 60px;
+          margin-top: 7px;
+          ul {
+            float: right;
+            li {
+              display: inline;
+              list-style-type: none;
+              &#max {
+                color: red;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+/*==========================================
+Поиск команд
+============================================*/
+.search-options {
+  //border: 1px solid #e3e3e3;
+  .search-teams {
+    input[type=text] {
+      display: block;
+      margin: 0 auto;
+      width: 50% !important;
+      font-family: Play;
+      font-size: 18px;
+      appearance: none;
+      box-shadow: none;
+      padding: 10px;
+      border: none;
+      border-bottom: solid 2px #e3e3e3;
+      transition: border 0.3s;
+      outline: none;
+      text-align: left;
+
+      &:focus &.focus {
+        outline: 0;
+        border-color: inherit;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-bottom: solid 2px #969696;
+      }
+
+      &:active &:hover &:visited {
+        outline: none;
+        border-color: transparent;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+      }
+    }
+    i {
+      font-size: 16px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.search-options.teams-options {
+  display: none;
+}
+
+.no-search-results {
+  img {
+    max-width: 400px !important;
+    border-radius: 0 !important;
+  }
+}
+
+.show-team {
+  text-align: center;
+  margin-bottom: 12px;
+  a {
+    font-family: $ff;
+    font-weight: 600;
+    -webkit-transition: ease .49s;
+    -moz-transition: ease .49s;
+    -ms-transition: ease .49s;
+    -o-transition: ease .49s;
+    transition: ease .49s;
+    color: black;
+    text-decoration: underline;
+    font-size: 15px;
+
+    &:hover {
+      color: $pcol;
+
+      text-decoration: none;
+      -webkit-transition: ease .49s;
+      -moz-transition: ease .49s;
+      -ms-transition: ease .49s;
+      -o-transition: ease .49s;
+      transition: ease .49s;
+    }
+  }
+}
+
+.card {
+  transition: .49s ease;
+  &:hover {
+    transition: .49s ease;
+    -webkit-box-shadow: 0px 0px 85px -25px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 85px -25px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 85px -25px rgba(0, 0, 0, 0.75);
+  }
+  .default-button.team-show-button {
+    margin-top: 55px;
+    margin-bottom: 55px;
+  }
+}
+
+ul.specs {
+  li {
+    list-style-type: none;
+  }
+}
+
+.content-image {
+  img {
+    max-width: 300px;
+  }
+}
+
+.grid-item {
+  margin-bottom: 20px;
+}
+
+section.all-teams {
+
+  .container-title {
+    .search-team-button {
+      position: absolute;
+      margin-left: 950px;
+      margin-top: -100px;
+      -webkit-transition: ease .33s;
+      -moz-transition: ease .33s;
+      -ms-transition: ease .33s;
+      -o-transition: ease .33s;
+      transition: ease .33s;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+        -webkit-transition: ease .33s;
+        -moz-transition: ease .33s;
+        -ms-transition: ease .33s;
+        -o-transition: ease .33s;
+        transition: ease .33s;
+      }
+
+      i {
+        font-size: 35px;
+        -webkit-transition: ease .49s;
+        -moz-transition: ease .49s;
+        -ms-transition: ease .49s;
+        -o-transition: ease .49s;
+        transition: ease .49s;
+
+        &:hover {
+          color: $pcol;
+          -webkit-transition: ease .49s;
+          -moz-transition: ease .49s;
+          -ms-transition: ease .49s;
+          -o-transition: ease .49s;
+          transition: ease .49s;
+        }
+      }
+    }
+  }
+
+  .card {
+    transition: .49s ease;
+    &:hover {
+      transition: .49s ease;
+      -webkit-box-shadow: 0px 0px 85px -25px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 85px -25px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 85px -25px rgba(0, 0, 0, 0.75);
+    }
+    .default-button.team-show-button {
+      margin-top: 55px;
+      margin-bottom: 55px;
+    }
+
+    .show-team {
+      text-align: center;
+      margin-bottom: 12px;
+      a {
+        font-family: $ff;
+        font-weight: 600;
+        -webkit-transition: ease .49s;
+        -moz-transition: ease .49s;
+        -ms-transition: ease .49s;
+        -o-transition: ease .49s;
+        transition: ease .49s;
+        color: black;
+        text-decoration: underline;
+        font-size: 15px;
+
+        &:hover {
+          color: $pcol;
+
+          text-decoration: none;
+          -webkit-transition: ease .49s;
+          -moz-transition: ease .49s;
+          -ms-transition: ease .49s;
+          -o-transition: ease .49s;
+          transition: ease .49s;
+        }
+      }
+    }
+  }
+
+  ul.specs {
+    li {
+      list-style-type: none;
+    }
+  }
+
+  ul:first-child {
+    border-right: 1px solid #bebebe;
+  }
+
+  .team-list {
+    .team-card {
+      margin-top: 5%;
+
+      .team-tags {
+        ul {
+          li {
+            list-style-type: none;
+            margin-top: 20px;
+          }
+        }
+      }
+
+      .team-image {
+        width: 360px;
+        height: 250px;
+        overflow: hidden;
+        @include border-radius(10px 10px 10px 10px);
+
+        &:hover {
+          .overlay {
+            opacity: 0.66;
+          }
+        }
+        img {
+          width: 360px;
+          height: 250px;
+          @include border-radius(10px 10px 10px 10px);
+          -webkit-transition: all 300ms ease-out;
+          -moz-transition: all 300ms ease-out;
+          -o-transition: all 300ms ease-out;
+          -ms-transition: all 300ms ease-out;
+          transition: all 300ms ease-out;
+        }
+        .overlay {
+          background-color: black;
+          position: absolute;
+          top: 0;
+          @include border-radius(10px 10px 10px 10px);
+          color: #fff;
+          z-index: 1;
+          -webkit-transition: all 300ms ease-out;
+          -moz-transition: all 300ms ease-out;
+          -o-transition: all 300ms ease-out;
+          -ms-transition: all 300ms ease-out;
+          transition: all 300ms ease-out;
+          opacity: 0;
+          width: 360px;
+          height: 250px;
+          text-align: center;
+
+          .overlay-text {
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+            transform: translateY(80px);
+            -webkit-transform: translateY(80px);
+          }
+          .team-title {
+            p {
+              color: white;
+              font-family: "Segoe UI";
+              font-size: 18px;
+              font-weight: 400;
+              text-align: center;
+              font-style: italic;
+              opacity: 1;
+              transition-delay: 0.01s;
+              transition-duration: 0.1s;
+              z-index: 2;
+              span {
+                font-size: 42px;
+                font-weight: 600;
+                font-style: italic;
+
+              }
+            }
+          }
+        }
+      }
+      .team-description {
+        .team-title {
+          h2 {
+            font-family: "Segoe UI";
+            font-weight: 500;
+            span {
+              margin-left: 5px;
+              font-size: 14px;
+              color: #AEAEAE;
+              font-style: italic;
+              i {
+                margin-right: 4px;
+              }
+            }
+          }
+        }
+        .description {
+          p {
+            min-height: 60px;
+            font-family: $ff;
+            font-weight: 400;
+          }
+        }
+      }
+
+      .team-button {
+        margin-top: 25px;
+        text-align: center;
+        margin-bottom: 5%;
+        a {
+          border: 2px solid $pcol;
+          @include border-radius(5px 5px 5px 5px);
+          padding: 10px 10px 10px 10px;
+          font-family: $ff;
+          font-weight: 600;
+          color: $pcol;
+          transition: .33s ease;
+          text-decoration: none;
+          &:hover {
+            background-color: $pcol;
+            color: white;
+            transition: .33s ease;
+          }
+        }
+      }
+    }
+  }
+  .team-row {
+    margin-bottom: 35px;
+  }
+  .search-team {
+    float: right;
+    position: absolute;
+    margin-left: 900px;
+    display: inline;
+    margin-top: -100px;
+    input[type=text] {
+      display: block;
+      margin: 0;
+      width: 100%;
+      font-family: Play;
+      font-size: 18px;
+      appearance: none;
+      box-shadow: none;
+      padding: 10px;
+      border: none;
+      border-bottom: solid 2px #e3e3e3;
+      transition: border 0.3s;
+      outline: none;
+      text-align: left;
+
+      &:focus &.focus {
+        outline: 0;
+        border-color: inherit;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-bottom: solid 2px #969696;
+      }
+
+      &:active &:hover &:visited {
+        outline: none;
+        border-color: transparent;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+      }
+    }
+    i {
+      font-size: 36px;
+      color: #e3e3e3;
+      margin-top: 10px;
+    }
+  }
+
+}
+
+section.team-slider.team-slider-section {
+
+  min-height: 450px !important;
+  margin-bottom: 40px;
+
+  h1 {
+    position: absolute;
+    text-align: center;
+    top: 27%;
+    right: 0;
+    left: 0;
+    color: white;
+    font-family: Play;
+  }
+
+  .slider-buttons {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    left: 0;
+  }
+
+}
+
+section.team-slider {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 750px;
+  position: relative;
+  z-index: 1;
+  .title {
+    margin-top: 19%;
+    text-align: center;
+    margin-bottom: 20px;
+    h1 {
+      font-size: 66px;
+      color: white;
+      font-weight: bold;
+      z-index: 1;
+    }
+  }
+  .slogan {
+    text-align: center;
+    z-index: 2;
+    p {
+      color: white;
+      text-align: center;
+      font-style: italic;
+      font-size: 20px;
+
+    }
+  }
+
+  .description {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    p {
+      font-size: 14px;
+      color: white;
+      margin-right: 40%;
+    }
+  }
+
+  .slider-buttons {
+    margin-top: 40px;
+    text-align: center;
+    ul {
+      list-style-type: none;
+      li {
+        display: inline;
+        margin-right: 20px;
+        border: 1px solid white;
+        padding: 7px 8px 8px;
+        @include border-radius(5px);
+        transition: 0.33s ease;
+        &:hover {
+          border: 1px solid $pcol;
+          background-color: $pcol;
+          transition: 0.33s ease;
+        }
+        a {
+          color: white;
+          padding: 20px;
+          text-decoration: none;
+          font-weight: 700;
+          transition: 0.33s ease;
+          &:hover {
+            color: white;
+            transition: 0.33s ease;
+          }
+          i {
+            margin-left: 5px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  .team-looking {
+    margin-top: 50px;
+    text-align: center;
+    ul {
+      display: inline;
+      li {
+        display: inline;
+        list-style-type: none;
+        i {
+          color: white;
+          font-size: 32px;
+        }
+      }
+    }
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(1, 1, 1, 0.8);
+    z-index: -1;
+  }
+}
+
+.search-people {
+  .search-filter {
+    margin-bottom: 40px;
+    ul {
+      text-align: center;
+      li {
+        display: inline;
+        list-style-type: none;
+        a {
+          color: black;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+section.team-short-description {
+  .content-desc {
+    text-align: center;
+
+    img {
+      max-width: 550px;
+      margin-top: -50px;
+    }
+    h4 {
+
+      margin-left: 20%;
+      margin-right: 20%;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+section.full-descr {
+  text-align: center;
+  .description {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+section.scope {
+  margin-bottom: 5%;
+  .targets {
+    .target {
+      h1 {
+        text-align: center;
+        font-family: Play;
+        font-size: 54px;
+      }
+    }
+  }
+  .targets-image {
+    text-align: center;
+    img {
+      max-height: 200px;
+    }
+  }
+}
+
+section.openings {
+  ul {
+    li {
+      display: inline;
+      list-style-type: none;
+      font-size: 45px;
+    }
+    li:nth-child(2) {
+      margin-left: 50px;
+    }
+  }
+}
+
+.openings {
+  font-size: 45px;
+  font-weight: 900;
+  &.openings-small {
+    .selected-spec-img {
+      text-align: center;
+      margin-bottom: 50px;
+      img {
+        max-width: 50px;
+      }
+    }
+  }
+}
+
+.selected-spec-img {
+  text-align: center;
+  margin-bottom: 50px;
+  img {
+    max-width: 150px;
+  }
+}
+
+.selected {
+  h4 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+.default-settings {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.center-block {
+  text-align: center;
+}
+
+.more-info {
+  background-color: #f8f9fa;
+}
+
+.more-settings-menu {
+  ul {
+    li {
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+
+}
+
+ul.specs-inline {
+  font-size: 24px;
+  font-family: Play;
+  display: inline;
+  text-align: center;
+  li {
+    display: inline;
+    i {
+      color: $pcol;
+    }
+  }
+  li:nth-child(n+2) {
+    margin-left: 55px;
+  }
+}
+
+section.team-settings {
+  .team-settings-container {
+    .new-entries {
+      margin-bottom: 50px;
+      h4 {
+        text-align: center;
+      }
+      h3 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        color: #B8BEBB;
+      }
+    }
+    .general-info {
+      h4 {
+        text-align: center;
+      }
+    }
+    .setup-team {
+      h4 {
+        text-align: center;
+      }
+    }
+    ul {
+      margin-bottom: 45px;
+      li {
+        list-style-type: none;
+        i {
+          margin-right: 5px;
+        }
+        i.close-notification {
+          float: right;
+          cursor: pointer;
+          transition: .33s ease;
+          &:hover {
+            transition: .33s ease;
+            color: $pcol;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .clear-notifications {
+      text-align: center;
+    }
+  }
+}
+
+section.join-team-approve {
+  text-align: center;
+  margin-bottom: 65px;
+  .approve-image {
+    img {
+      max-width: 350px;
+    }
+  }
+  h4 {
+    margin-bottom: 35px;
+  }
+}
+
+.your-teams {
+
+  h3 {
+    text-align: center;
+  }
+
+  .team-row {
+    margin-bottom: 25px;
+  }
+}
+
+.card.empty-add-team-card {
+  min-height: 200px;
+  background-color: #EEEEEF;
+  cursor: pointer;
+  i {
+    font-size: 72px;
+    color: #5e5e5e;
+  }
+  a {
+    color: #5e5e5e;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.content-image-large {
+  img {
+    max-width: 350px;
+  }
+}
+
+.specs-inline.white-specs {
+  li {
+    color: white;
+  }
+}
+
+ul.openings-each-team {
+  a {
+    color: black;
+    font-family: Play;
+  }
+}
+
+.team-search-input input {
+  margin-left: 30%;
+  margin-right: 30%;
+}

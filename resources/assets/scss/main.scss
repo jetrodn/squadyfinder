@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/**
+ * Author: Vladimir Rodin
+ * Twitter: @heyhihellobro
+ * Project: SquadyFinder
+ *
+ */
+
+$pcol: #356fec;
+$ff: "Roboto", sans-serif;
+
+@import "_scss_components/global/fonts";
+@import "_scss_components/global/general";
+@import "_scss_components/global/mixins";
+
+@import "_scss_components/modules/developer_colors";
+@import "_scss_components/modules/footer";
+@import "_scss_components/modules/login";
+@import "_scss_components/modules/people";
+@import "_scss_components/modules/profile";
+@import "_scss_components/modules/profile_settings";
+@import "_scss_components/modules/slider_section";
+@import "_scss_components/modules/subscribe";
+@import "_scss_components/modules/teams";
+@import "_scss_components/modules/try_section";
+@import "_scss_components/modules/contact";
+
+@import "_scss_components/partials/cards";
+
+/**
+ * todo: посмотреть что тут
+ *
+ */
+@import "_scss_components/modules/header_section";
+@import "_scss_components/modules/last_teams_section";
+@import "_scss_components/modules/partners_section";
+

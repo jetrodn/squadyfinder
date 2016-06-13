@@ -1,0 +1,25 @@
+/*============================================ 
+ Partners Section
+ ============================================*/
+ section.partners {
+   .container-title {
+     margin-bottom: 70px;
+   }
+   .partners-list {
+     margin-bottom: 50px;
+     .partner-item {
+       text-align: center;
+       img {
+         max-width: 130px;
+         -webkit-filter: grayscale(100%);
+         filter:grayscale(100%);
+         -webkit-transition: 0.3s ease-in-out;
+         transition: 0.3s ease-in-out;
+         &:hover {
+           -webkit-filter: grayscale(0);
+ 	         filter: grayscale(0);
+         }
+       }
+     }
+   }
+ }

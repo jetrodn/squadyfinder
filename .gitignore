@@ -1,0 +1,77 @@
+#
+# General ignoring
+#
+.idea
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.7z
+*.jar
+*.rar
+*.zip
+*.bzip
+*.bz2
+*.xz
+*.lzma
+*.cab
+bower_components
+*.psd
+*.log
+src
+robots.txt
+Procfile
+.htaccess
+
+#
+# WP-CLI
+#
+db-sync
+sql-dump-*.sql
+
+#
+# Vendor (e.g. Composer)
+#
+vendor/*
+!vendor/.gitkeep
+
+#
+# Node Package Manager
+#
+node_modules
+
+#
+# Vagrant
+#
+.vagrant
+
+#
+# Compilers
+#
+.sass-cache
+*.css.map
+
+#
+# Laravel 5 & Lumen specific
+#
+bootstrap/cache/
+.env.*.php
+.env.php
+.env
+.env.example
+.env.production
+Homestead.yaml
+Homestead.json
+
+#
+# Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
+#
+.rocketeer/
+
+#
+# SquadyFinder
+#
+_project_resources

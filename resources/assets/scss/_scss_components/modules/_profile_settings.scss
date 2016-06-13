@@ -1,0 +1,34 @@
+section.profile-settings {
+  form {
+
+    .buttons {
+      margin-top: 110px;
+
+    }
+  }
+
+  .profile-spec {
+    .container-title {
+      .selected-specs {
+        display: none;
+      }
+    }
+  }
+}
+
+/*==========================================
+@ user-profile/settings/change-password
+============================================*/
+section.change-password {
+  form {
+    .input-group-addon {
+      font-weight: 600;
+      cursor: pointer;
+      i {
+        font-size: 16px;
+        font-weight: 600;
+        margin-right: 5px;
+      }
+    }
+  }
+}

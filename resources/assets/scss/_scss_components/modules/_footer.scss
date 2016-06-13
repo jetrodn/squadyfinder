@@ -1,0 +1,135 @@
+/**
+ * Footer
+ *
+ */
+
+footer {
+  //border-top: 1px solid #eee;
+
+  .footer-main-container {
+    background-color: #F8F9FA;
+    .footer-main-item {
+      margin-top: 30px;
+      margin-bottom: 50px;
+      h3 {
+        font-family: $ff;
+        color: black;
+      }
+      ul {
+        li {
+          list-style-type: none;
+          line-height: 25px;
+          a {
+            color: #7C7F7B;
+            font-size: 14px;
+            transition: 0.33s ease;
+            &:hover {
+              color: $pcol;
+              transition: 0.33s ease;
+              text-decoration: none;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-cred {
+  }
+
+
+
+  .footer-about {
+    img {
+      max-height: 50px;
+      position: absolute;
+      margin-left: -320px;
+      margin-top: 2px;
+    }
+    margin-top: 15px;
+    a {
+      font-size: 26px;
+      font-family: Muller;
+      text-decoration: none;
+      line-height: 40px;
+      color: $pcol;
+      font-weight: bold;
+      transition: 0.33s ease;
+      &:hover {
+        color: $pcol;
+        transition: 0.33s ease;
+      }
+      sub {
+        font-size: 11px;
+        color: black;
+      }
+    }
+    p {
+      font-size: 14px;
+      font-family: $ff;
+      a {
+        font-size: 14px;
+        font-family: $ff;
+        &:hover {
+          color: black;
+        }
+
+      }
+    }
+  }
+  .footer-menu {
+    margin-top: 5px;
+    h4 {
+      text-align: center;
+      font-size: 14px;
+      color: #7C7F7B;
+      font-weight: 300;
+      margin-right: 45px;
+      line-height: 35px;
+      vertical-align: middle;
+    }
+    ul {
+      list-style-type: none;
+      li {
+        display: inline;
+        a {
+          color: #7C7F7B;
+          font-weight: bold;
+          margin-right: 45px;
+          line-height: 55px;
+          vertical-align: middle;
+          transition: 0.53s ease;
+          &:hover {
+            color: $pcol;
+            transition: 0.33s ease;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .footer-social {
+    margin-top: 10px;
+    ul {
+      list-style-type: none;
+      li {
+        display: inline;
+        a {
+          font-size: 18px;
+          color: #7C7F7B;
+          font-weight: bold;
+          margin-right: 15px;
+          line-height: 55px;
+          vertical-align: middle;
+          transition: 0.53s ease;
+          &:hover {
+            color: $pcol;
+            transition: 0.33s ease;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

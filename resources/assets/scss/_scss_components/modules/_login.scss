@@ -1,0 +1,71 @@
+section.login-form {
+  .login-image {
+    img {
+      max-width: 500px;
+      margin-left: 40px;
+    }
+  }
+
+  .register-image {
+    img {
+      max-width: 600px;
+    }
+  }
+
+  .form {
+    margin-top: 40px;
+    #password-check-len {
+      position: absolute;
+      font-size: 25px;
+      margin-left: 385px;
+      margin-top: -37px;
+    }
+    #password-check-conf {
+      position: absolute;
+      font-size: 25px;
+      margin-left: 385px;
+      margin-top: -37px;
+    }
+    #name-check-len {
+      position: absolute;
+      font-size: 25px;
+      margin-left: 385px;
+      margin-top: -37px;
+    }
+    #email-check-len {
+      position: absolute;
+      font-size: 25px;
+      margin-left: 385px;
+      margin-top: -37px;
+    }
+    .login-with-social {
+      margin-top: 50px;
+      h4 {
+        font-family: $ff;
+        margin-bottom: 40px;
+      }
+      .social-option {
+        text-align: center;
+        a {
+          text-align: center;
+          color: black;
+          transition: .33s ease;
+          i {
+            font-size: 45px;
+          }
+          &:hover {
+            color: $pcol;
+            transition: .33s ease;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+p.login-href {
+  font-family: $ff;
+  font-weight: 400;
+  margin-top: 9px;
+}

@@ -1,0 +1,46 @@
+/*============================================
+ Try Section
+ ============================================*/
+
+ section.try {
+   min-height: 580px;
+   .container-title {
+     margin-top: 110px;
+   }
+   .video-section {
+     margin-top: 90px;
+   }
+   .container-description {
+     margin-top: 50px;
+     text-align: center;
+     margin-bottom: 50px;
+     p {
+       margin-left: 20%;
+       margin-right: 20%;
+     }
+     img {
+       max-width: 900px;
+       margin-bottom: 50px;
+     }
+   }
+   .try-why {
+     text-align: center;
+     margin-bottom: 80px;
+     .try-why-item {
+       h1 {
+         font-size: 28px;
+         font-weight: bold;
+         color: black;
+       }
+       i {
+         font-size: 48px;
+         margin-top: 10px;
+         margin-bottom: 10px;
+       }
+     }
+   }
+ }
+
+.backgrey {
+  background-color: #f8f9fa;
+}

@@ -1,0 +1,78 @@
+/*============================================
+ Header Section
+ ============================================*/
+
+.header-section {
+  border-bottom: 1px solid #eee;
+  margin-top: 10px;
+  .logo-container {
+    display: inline-block;
+    img {
+      max-height: 50px;
+      max-width: 60px;
+      //position: absolute;
+      //margin-left: -320px;
+      margin-top: 0px;
+    }
+    a {
+      font-size: 26px;
+      text-decoration: none;
+      line-height: 57px;
+      color: $pcol;
+      font-weight: bold;
+      transition: 0.33s ease;
+      font-family: Muller;
+      &:hover {
+        color: $pcol;
+        transition: 0.33s ease;
+      }
+    }
+  }
+  .navigation-menu {
+    ul {
+      list-style-type: none;
+      li {
+        display: inline;
+        a {
+          color: black;
+          font-weight: bold;
+          margin-right: 45px;
+          line-height: 55px;
+          vertical-align: middle;
+          transition: 0.53s ease;
+          &:hover {
+            color: $pcol;
+            transition: 0.33s ease;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .second-navigation-menu {
+    ul {
+      list-style-type: none;
+      li {
+        display: inline;
+        a {
+          color: black;
+          font-weight: bold;
+          margin-left: 25px;
+          line-height: 55px;
+          vertical-align: middle;
+          transition: 0.53s ease;
+          &:hover {
+            color: $pcol;
+            transition: 0.33s ease;
+            text-decoration: none;
+          }
+        }
+        &.active {
+          a {
+            color: $pcol;
+          }
+        }
+      }
+    }
+  }
+}
